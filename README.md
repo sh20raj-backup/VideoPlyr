@@ -1,17 +1,49 @@
 # VideoPlyr
-Video Player with Many Powerful HTML5 Players Hidden ID and Many Features 🚀
 
-[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FVideoPlyr%2F&labelColor=%23f47373&countColor=%232ccce4&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FVideoPlyr%2F)
+**A demo hub for HTML5 video players and Google Drive video playback integrations.** This backup copy preserves the source history while migrating links and hosting metadata to the `sh20raj-backup` namespace.
 
-![drive-logo](https://user-images.githubusercontent.com/66713844/189491013-27a5bc30-6057-4e08-b66b-d5184f20060d.png)
+[![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-222?logo=github)](https://sh20raj-backup.github.io/VideoPlyr/)
+[![Pages deployment](https://github.com/sh20raj-backup/VideoPlyr/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/sh20raj-backup/VideoPlyr/actions/workflows/pages.yml)
 
-## Websites
+## Live demos
 
-- https://sh20raj.github.io/DrivePlyr/
-- https://sh20raj.github.io/VideoPlyr/
-- https://driveplyr.appspages.online/
+- **VideoPlyr demo hub:** https://sh20raj-backup.github.io/VideoPlyr/
+- **DrivePlyr demo:** https://sh20raj-backup.github.io/DrivePlyr/
+- **DrivePlyr20 source/templates:** https://github.com/sh20raj-backup/DrivePlyr20
 
-## GitHub
+## Features
 
-- https://github.com/SH20RAJ/DrivePlyr
-- https://github.com/SH20RAJ/VideoPlyr
+- Multiple HTML5 player demos in one place.
+- Examples for integrating the Sopplayer CDN distribution.
+- Responsive demo layouts and standalone player pages.
+- GitHub Actions workflow for publishing the static demo to GitHub Pages.
+
+## Sopplayer CDN
+
+Use the version-pinned backup CDN in new integrations:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sh20raj-backup/Sopplayer@v2.0.0/sopplayer.min.css">
+<video class="sopplayer" controls preload="auto">
+  <source src="YOUR_VIDEO_URL.mp4" type="video/mp4">
+</video>
+<script src="https://cdn.jsdelivr.net/gh/sh20raj-backup/Sopplayer@v2.0.0/sopplayer.min.js"></script>
+```
+
+Replace `YOUR_VIDEO_URL.mp4` with your own media URL. For deterministic builds, keep the explicit `@v2.0.0` version pin.
+
+## Deployment
+
+The workflow at [`.github/workflows/pages.yml`](.github/workflows/pages.yml) deploys the repository's static files to GitHub Pages whenever `main` changes and supports manual dispatch. Monitor [workflow runs](https://github.com/sh20raj-backup/VideoPlyr/actions) for the latest result.
+
+> GitHub Pages serves static files; PHP templates require a PHP-capable server and do not execute on Pages.
+
+## Related projects
+
+- [Sopplayer](https://github.com/sh20raj-backup/Sopplayer) — HTML5 player library and CDN assets.
+- [DrivePlyr](https://github.com/sh20raj-backup/DrivePlyr) — Google Drive proxy player demos.
+- [DrivePlyr20](https://github.com/sh20raj-backup/DrivePlyr20) — PHP player templates.
+
+## License
+
+Refer to the repository's existing license file, if present.
